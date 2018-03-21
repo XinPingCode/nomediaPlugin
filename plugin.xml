@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="nomediaPlugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>nomediaPlugin</name>
+<js-module name="nomediaPlugin" src="www/nomediaPlugin.js">
+<clobbers target="cordova.plugins.nomediaPlugin" />
+</js-module><platform name="android">
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="nomediaPlugin"><param name="android-package" value="nomediaPlugin.nomediaPlugin" /></feature>
+</config-file>
+<config-file parent="/*" target="AndroidManifest.xml">
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+</config-file>
+<source-file src="src/android/nomediaPlugin.java" target-dir="src/nomediaPlugin/nomediaPlugin" />
+</platform>
+</plugin>

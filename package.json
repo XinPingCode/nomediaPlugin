@@ -1,0 +1,17 @@
+{
+  "name": "nomediaPlugin",
+  "version": "0.0.8",
+  "cordova": {
+    "id": "nomediaPlugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "XinPingCode",
+  "license": "ISC",
+  "description": ""
+}
